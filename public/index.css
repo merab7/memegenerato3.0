@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+main {
+  padding: 36px;
+}
+
+.header {
+  display: flex;
+   justify-content: center;
+   align-items: center;
+  height: 65px;
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+.header--image {
+  width: 50%;
+  
+}
+
+.header--title {
+  font-size: 1.25rem;
+  margin-left: -50px;
+}
+
+.header--project {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px  / 1fr 1fr;
+  max-width: 700px;
+  gap: 17px;
+  margin-bottom: 17px;
+}
+
+@media(max-width:670px){
+  .form{
+    display: grid;
+    grid-template: 40px 40px/ 1fr ;
+    gap: 17px;
+    margin-bottom: 17px;
+  }
+}
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.downloadbtn{
+ padding: 12px;
+}
+
+@media(max-width:670px){
+  .form{
+    display: grid;
+    grid-template: 40px 40px/ 1fr ;
+    gap: 17px;
+    margin-bottom: 17px;
+  }
+  .form--button{
+    padding: 20px;
+  }
+  .downloadbtn{
+    padding: 20px;
+  }
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.meme {
+  position: relative;
+}
+
+.meme--image {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 5px dashed black;
+}
+
+
+.meme--text {
+  position: absolute;
+  word-wrap: break-word;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 1,5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+.colorpickerbutton{
+  
+  font-family: "Karla", sans-serif;
+  margin-bottom: 10px;
+  margin-left: 8px;
+  padding: 10px;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.blockpicker{
+  display: none;
+}
